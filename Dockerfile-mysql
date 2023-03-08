@@ -1,0 +1,4 @@
+FROM mysql:5.7
+MAINTAINER itdream "756808193@qq.com"
+WORKDIR /docker-entrypoint-initdb.d
+ADD djangoproject.sql /docker-entrypoint-initdb.d/
